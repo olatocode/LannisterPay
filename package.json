@@ -1,0 +1,19 @@
+{
+  "name": "LannisterPay",
+  "version": "1.0.0",
+  "description": "The service is meant to calculate the amount due to one or more split payment \"entities\" as well as the amount left after all splits have been computed.",
+  "main": "app.js",
+  "repository": "https://github.com/olatocode/LannisterPay.git",
+  "author": "Tobi Awosola",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "dev": "nodemon ./app.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.2",
+    "nodemon": "^2.0.18"
+  }
+}
