@@ -2,6 +2,7 @@
 
 const mongoose = require('mongoose');
 
+// Defining transaction schema properties
 const transactionSchema = mongoose.Schema({
   amount: {
     type: Number,
@@ -24,6 +25,7 @@ const transactionSchema = mongoose.Schema({
     },
   ],
 });
-// convert transaction schema to transaction model
-const transactionModel = mongoose.model('transaction', transactionSchema);
+
+// Convert transaction schema to transaction model
+const transactionModel = mongoose.model('Transaction', transactionSchema);
 module.exports = transactionModel;
