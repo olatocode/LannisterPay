@@ -1,6 +1,4 @@
 /** @format */
-
-const mongoose = require('mongoose');
 const Transaction = require('../models/transaction.model');
 
 exports.initiateTransaction = async (req, res) => {
@@ -12,6 +10,7 @@ exports.initiateTransaction = async (req, res) => {
       customerEmail,
       splitInfo,
     });
+    console.log(newTransaction);
     res.status(201).json({
       message: 'Created',
       newTransaction,
