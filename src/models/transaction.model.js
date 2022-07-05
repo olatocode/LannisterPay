@@ -3,7 +3,7 @@
 const mongoose = require('mongoose');
 
 // Defining transaction schema properties
-const transactionSchema = mongoose.Schema({
+const transactionSchema = new mongoose.Schema({
   amount: {
     type: Number,
     required: true,
